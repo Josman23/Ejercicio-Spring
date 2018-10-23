@@ -1,0 +1,11 @@
+.gradle
+.idea
+out/
+
+*.iml
+*.bin
+*.class
+*.zip
+*.rar
+*.pdf
+
