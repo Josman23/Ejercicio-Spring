@@ -1,6 +1,6 @@
 package Tester;
 
-public class DvdPlayer {
+public class DvdPlayer implements Device {
 
     public void turnON(){
         System.out.println("Encender Reproductor");

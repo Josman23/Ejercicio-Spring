@@ -1,7 +1,6 @@
 package Tester;
 
-public class BlueRayPlayer implements Device{
-
+public class SmartPhone implements Device{
     public void turnON(){
         System.out.println("Encender Reproductor");
     }

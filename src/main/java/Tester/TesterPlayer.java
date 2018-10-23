@@ -1,18 +1,13 @@
 package Tester;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 public class TesterPlayer {
 
     public static void main(String[] args) {
-
-        DvdPlayer dvd = new DvdPlayer();
-        Mp3Player mp3 = new Mp3Player();
-        BlueRayPlayer brp= new BlueRayPlayer();
-
-        Tester test = new Tester();
-        test.testDvd(dvd);
-        System.out.println();
-        test.testMp3(mp3);
-        System.out.println();
-        test.testBlueRay(brp);
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
+        Tester tester = applicationContext.getBean("tester",Tester.class);
+        tester.test();
     }
 }

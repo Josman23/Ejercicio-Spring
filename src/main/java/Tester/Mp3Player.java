@@ -1,6 +1,6 @@
 package Tester;
 
-public class Mp3Player {
+public class Mp3Player implements Device {
 
     public void turnON(){
         System.out.println("Encender Reproductor");
