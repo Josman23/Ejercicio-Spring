@@ -2,7 +2,7 @@ package Tester;
 
 import org.springframework.stereotype.Component;
 
-@Component("tester")
+@Component("playBanda")
 public class Banda implements PlayList {
     @Override
     public String getName() {

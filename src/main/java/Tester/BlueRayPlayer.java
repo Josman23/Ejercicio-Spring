@@ -2,7 +2,7 @@ package Tester;
 
 import org.springframework.stereotype.Component;
 
-@Component("tester")
+@Component("testerBrp")
 public class BlueRayPlayer implements Device{
 
     private PlayList playList;

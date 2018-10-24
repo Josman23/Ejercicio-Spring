@@ -2,7 +2,7 @@ package Tester;
 
 import org.springframework.stereotype.Component;
 
-@Component("tester")
+@Component("playRock")
 public class Rock implements PlayList {
 
     @Override

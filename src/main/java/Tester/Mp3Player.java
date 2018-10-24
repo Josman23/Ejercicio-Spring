@@ -1,8 +1,10 @@
 package Tester;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component("tester")
+@Component("testerMp3")
 public class Mp3Player implements Device {
 
     private PlayList playList;

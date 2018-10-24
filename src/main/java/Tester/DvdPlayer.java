@@ -2,7 +2,7 @@ package Tester;
 
 import org.springframework.stereotype.Component;
 
-@Component("tester")
+@Component("testerDvd")
 public class DvdPlayer implements Device {
 
     private PlayList playList;

@@ -2,7 +2,7 @@ package Tester;
 
 import org.springframework.stereotype.Component;
 
-@Component("tester")
+@Component("testerSp")
 public class SmartPhone implements Device{
 
     private PlayList playList;
