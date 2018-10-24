@@ -9,17 +9,39 @@
          http://www.springframework.org/schema/context/spring-context.xsd
          http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
 
-
         <bean id="factura" class="mx.sintelti.cursos.spring.Factura"/>
 
-        <bean id="tester" class="Tester.Tester">
+
+        <bean id="testerDvd" class="Tester.Tester">
+                <property name="device" ref="dvdPlayer"/>
+        </bean>
+        <bean id="testerMp3" class="Tester.Tester">
+                <property name="device" ref="mp3Player"/>
+        </bean>
+        <bean id="testerBrp" class="Tester.Tester">
+                <property name="device" ref="blueRayPlayer"/>
+        </bean>
+        <bean id="testerSp" class="Tester.Tester">
                 <property name="device" ref="smartPhone"/>
         </bean>
 
-        <bean id="dvdPlayer" class="Tester.DvdPlayer"/>
-        <bean id="mp3Player" class="Tester.Mp3Player"/>
-        <bean id="blueRayPlayer" class="Tester.BlueRayPlayer"/>
-        <bean id="smartPhone" class="Tester.SmartPhone"/>
 
+        <bean id="dvdPlayer" class="Tester.DvdPlayer">
+                <property name="playList" ref="playRock"/>
+        </bean>
+        <bean id="mp3Player" class="Tester.Mp3Player">
+                <property name="playList" ref="playPop"/>
+        </bean>
+        <bean id="blueRayPlayer" class="Tester.BlueRayPlayer">
+                <property name="playList" ref="playRock"/>
+        </bean>
+        <bean id="smartPhone" class="Tester.SmartPhone">
+                 <property name="playList" ref="playBan"/>
+        </bean>
+
+
+        <bean id="playRock" class="Tester.Rock"/>
+        <bean id="playPop" class="Tester.Pop"/>
+        <bean id="playBan" class="Tester.Banda"/>
 
 </beans>
