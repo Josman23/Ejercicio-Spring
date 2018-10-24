@@ -1,5 +1,8 @@
 package Tester;
 
+import org.springframework.stereotype.Component;
+
+@Component("tester")
 public class Mp3Player implements Device {
 
     private PlayList playList;
